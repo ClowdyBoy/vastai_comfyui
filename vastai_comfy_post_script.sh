@@ -25,6 +25,10 @@ WORKFLOWS=(
 )
 
 CHECKPOINT_MODELS=(
+
+)
+
+DIFFUSION_MODELS=(
     "https://huggingface.co/XLabs-AI/flux-dev-fp8/resolve/main/flux-dev-fp8.safetensors?download=true"
 )
 
@@ -35,7 +39,7 @@ LORA_MODELS=(
 )
 
 VAE_MODELS=(
-    "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors?download=true"
+    "https://huggingface.co/black-forest-labs/FLUX.1-schnell/resolve/main/ae.safetensors?download=true"
 )
 
 ESRGAN_MODELS=(
@@ -62,6 +66,9 @@ function provisioning_start() {
     provisioning_get_files \
         "${COMFYUI_DIR}/models/clip" \
         "${CLIP_MODELS[@]}"
+    provisioning_get_files \
+        "${COMFYUI_DIR}/models/diffusion_models" \
+        "${DIFFUSION_MODELS[@]}"    
     provisioning_get_files \
         "${COMFYUI_DIR}/models/unet" \
         "${UNET_MODELS[@]}"
