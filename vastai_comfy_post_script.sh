@@ -29,7 +29,7 @@ CHECKPOINT_MODELS=(
 )
 
 DIFFUSION_MODELS=(
-    "https://huggingface.co/XLabs-AI/flux-dev-fp8/resolve/main/flux-dev-fp8.safetensors?download=true"
+    "https://huggingface.co/Kijai/flux-fp8/resolve/main/flux1-dev-fp8.safetensors?download=true
 )
 
 UNET_MODELS=(
