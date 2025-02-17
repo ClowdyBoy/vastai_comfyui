@@ -35,6 +35,7 @@ LORA_MODELS=(
 )
 
 VAE_MODELS=(
+    "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors?download=true"
 )
 
 ESRGAN_MODELS=(
