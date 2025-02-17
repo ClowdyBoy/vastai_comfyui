@@ -59,7 +59,7 @@ function provisioning_start() {
         "${COMFYUI_DIR}/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_files \
-        "${COMFYUI_DIR}/models/clip \
+        "${COMFYUI_DIR}/models/clip" \
         "${CLIP_MODELS[@]}"
     provisioning_get_files \
         "${COMFYUI_DIR}/models/unet" \
